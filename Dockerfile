@@ -1,4 +1,4 @@
-#This Dockerfile is for getting GPU metrics from Nvprofin one-click.
+#This Dockerfile is for getting GPU metrics from Nvprof in one-click.
 #The main steps are:
 #       1. basic configuration (check GPU driver, CUDA version, etc)
 #       2. copy the default files from host to the container (the benchmark in "PORPLR" and the script file in "Xplace" )
@@ -7,14 +7,11 @@
 #       4. run the script (nvprof_ex.sh) to get the GPU metrics via Nvprof. Here in the script it specifies serveral metrics in CUDA 9.2 runable. 
 #       5. The output file is located in /spmv/output.log
 
-
-
 #------------------------
 #  Main functions
 #------------------------
 
 # 1. Basic configuration
-
 
 
 # 2. copy files from host to container
