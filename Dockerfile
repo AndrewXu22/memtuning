@@ -15,15 +15,15 @@
 
 
 # 2. copy files from host to container
-ADD /PROPLE ~/PROPLE
-ADD /xplacer ~/xplacer
+COPY /PROPLE /PROPLE
+COPY /xplacer /xplacer
 
 # 3. make the benchmark
-RUN cd /PROPLE/OrgAndOptBenchmarks/spmv
-RUN make check
+CMD cd /PROPLE/OrgAndOptBenchmarks/spmv
+CMD make check
 
 
 # 4. run the script
-RUN cd /xplacer/scripts
-RUN ./nvprof.ex.sh
+CMD cd /xplacer/scripts
+CMD ./nvprof.ex.sh
 
