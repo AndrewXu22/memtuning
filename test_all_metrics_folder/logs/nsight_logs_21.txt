@@ -1,0 +1,14 @@
+spmv_NBLOCKS =2016
+numRows =16128
+nItems=5193216
+host val[] alloc size =20772864
+host cols[] alloc size =20772864
+host rowDelimiters[] alloc size =64516
+kernel exe time in seconds (average over 5 repeats): 0.202262
+==PROF== Connected to process 10435
+==PROF== Disconnected from process 10435
+==ERROR== Failed to profile kernel "spmv_kernel" in process
+==ERROR== An error occurred while trying to profile.
+==ERROR== An error occurred while trying to profile
+==WARNING== No kernels were profiled
+==WARNING== Profiling kernels launched by child processes requires the --target-processes all option
